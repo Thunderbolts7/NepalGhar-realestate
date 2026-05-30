@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepal Ghar | Premium Properties in Nepal</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Nepal<span>Ghar</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Home) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find Your Dream Home in Nepal</h1>
+            <p>Premium properties across Nepal's best locations.</p>
+            <a href="#properties" class="btn">View Properties</a>
+        </div>
+    </section>
+
+    <div class="search-bar" aria-label="Property search filters">
+        <input id="searchLocationInput" type="text" placeholder="Search by location..." aria-label="Search by location">
+        <select id="searchTypeSelect" aria-label="Filter by property type">
+            <option>Property Type</option>
+            <option>Villa</option>
+            <option>Apartment</option>
+            <option>Townhouse</option>
+        </select>
+        <select id="searchPriceSelect" aria-label="Filter by price range">
+            <option>Price Range</option>
+            <option>Under ₨50L</option>
+            <option>₨50L - ₨1Cr</option>
+            <option>Above ₨1Cr</option>
+        </select>
+        <button id="searchPropertiesBtn" type="button" class="btn">Search</button>
+    </div>
+    <p id="searchResultMessage" class="search-result-message" aria-live="polite"></p>
+
+    <!-- Properties Section -->
+    <section id="properties" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Properties</h2>
+            <p class="section-intro">Explore each listing with more complete information about the home, neighborhood,
+                lifestyle fit, and booking availability before sending your request.</p>
+            <div class="property-grid">
+                <!-- Property 1 -->
+                <article class="property-card" data-title="Modern Family Villa" data-price="₨ 1,12,20,000"
+                    data-location="Kathmandu, Nepal" data-type="Villa" data-status="Ready to Move"
+                    data-availability="Available This Month" data-beds="4 Beds" data-baths="3 Baths"
+                    data-area="2,500 sqft" data-parking="2 Covered Parking" data-year="Built in 2022"
+                    data-description="This spacious modern villa in a prime Kathmandu neighborhood offers a refined family lifestyle with bright open interiors, premium finishes, a private garden, and multiple living areas designed for comfort and entertaining. It is well suited for buyers who want a move-in-ready luxury home with quick access to schools, hospitals, shopping areas, and major city routes."
+                    data-highlights="Private lawn and terrace|Modular kitchen with pantry|Close to schools and hospitals"
+                    data-owner-phone="+977-9810011101" data-owner-name="Sushil Adhikari"
+                    data-image="images/properties1.avif">
+                    <img src="images/properties1.avif" alt="Modern Villa">
+                    <div class="card-details">
+                        <h3>Modern Family Villa</h3>
+                        <p class="price">₨ 1,12,20,000</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+                        <p class="description">Spacious modern villa in prime Kathmandu with premium finishes, bright
+                            family spaces, a private outdoor area, and excellent access to schools, hospitals, and key
+                            city services.</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,500 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button type="button" class="property-action details-btn">More Details</button>
+                            <button type="button" class="property-action order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Property 2 -->
+                <article class="property-card" data-title="Luxury Downtown Apartment" data-price="₨ 59,40,000"
+                    data-location="Patan, Kathmandu" data-type="Apartment" data-status="Hot Listing"
+                    data-availability="Site Visit Open" data-beds="2 Beds" data-baths="2 Baths" data-area="1,200 sqft"
+                    data-parking="1 Reserved Parking" data-year="Renovated in 2024"
+                    data-description="This stylish apartment in historic Patan combines updated modern interiors with the character of a heritage neighborhood known for artisan culture, local markets, and vibrant street life. It is a strong fit for professionals, couples, or investors looking for comfortable urban living with walkable access to shops, cafes, and landmark sites."
+                    data-highlights="Walk to Patan Durbar Square|Lift and security access|Balcony with city view"
+                    data-owner-phone="+977-9810011102" data-owner-name="Nirmala Shrestha"
+                    data-image="images/properties2.avif">
+                    <img src="images/properties2.avif" alt="Luxury Apartment">
+                    <div class="card-details">
+                        <h3>Luxury Downtown Apartment</h3>
+                        <p class="price">₨ 59,40,000</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Patan, Kathmandu</p>
+                        <p class="description">Stylish apartment in historic Patan with modern rooms, heritage
+                            surroundings, and convenient walking access to local shops, cafes, and cultural landmarks.
+                        </p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,200 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button type="button" class="property-action details-btn">More Details</button>
+                            <button type="button" class="property-action order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Property 3 -->
+                <article class="property-card" data-title="Lakeside Paradise House" data-price="₨ 1,58,40,000"
+                    data-location="Pokhara, Nepal" data-type="Lake House" data-status="Premium View"
+                    data-availability="Available for Booking" data-beds="5 Beds" data-baths="4 Baths"
+                    data-area="3,000 sqft" data-parking="3 Vehicle Parking" data-year="Built in 2021"
+                    data-description="This scenic lakeside residence overlooking Fewa Lake offers a premium Pokhara lifestyle with generous indoor-outdoor living, large family spaces, and exceptional natural surroundings. It is ideal for buyers who value panoramic views, fresh air, peaceful mornings, and easy access to lakeside dining, leisure, and tourism areas."
+                    data-highlights="Panoramic lake and mountain views|Large family lounge|Private outdoor dining deck"
+                    data-owner-phone="+977-9810011103" data-owner-name="Bikash Gurung"
+                    data-image="images/properties3.avif">
+                    <img src="images/properties3.avif" alt="Lake View House">
+                    <div class="card-details">
+                        <h3>Lakeside Paradise House</h3>
+                        <p class="price">₨ 1,58,40,000</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Pokhara, Nepal</p>
+                        <p class="description">Stunning lakeside property with panoramic lake and mountain views,
+                            spacious interiors, and relaxing outdoor areas for buyers who want nature and comfort
+                            together.</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 3,000 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button type="button" class="property-action details-btn">More Details</button>
+                            <button type="button" class="property-action order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Property 4 -->
+                <article class="property-card" data-title="Cozy Suburban Home" data-price="₨ 79,20,000"
+                    data-location="Lalitpur, Nepal" data-type="Family Home" data-status="Best for Families"
+                    data-availability="Available in 2 Weeks" data-beds="3 Beds" data-baths="2 Baths"
+                    data-area="1,800 sqft" data-parking="2 Car Parking" data-year="Built in 2020"
+                    data-description="This comfortable suburban home in Lalitpur offers practical room planning, a calm residential setting, and a welcoming layout for everyday family life. It suits buyers who want nearby schools, markets, and community facilities while living in a quieter area with convenient city access."
+                    data-highlights="Quiet residential lane|Nearby schools and markets|Bright living room and yard"
+                    data-owner-phone="+977-9810011104" data-owner-name="Manisha Karki"
+                    data-image="images/properties4.avif">
+                    <img src="images/properties4.avif" alt="Suburban Home">
+                    <div class="card-details">
+                        <h3>Cozy Suburban Home</h3>
+                        <p class="price">₨ 79,20,000</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Lalitpur, Nepal</p>
+                        <p class="description">Comfortable residential home away from the busiest city zones, with a
+                            family-friendly layout, nearby schools and markets, and a quieter neighborhood for long-term
+                            living.</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,800 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button type="button" class="property-action details-btn">More Details</button>
+                            <button type="button" class="property-action order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Property 5 -->
+                <article class="property-card" data-title="Heritage Corner Property" data-price="₨ 3,30,00,000"
+                    data-location="Bhaktapur, Nepal" data-type="Heritage Residence" data-status="Exclusive Listing"
+                    data-availability="Private Viewing Only" data-beds="3 Beds" data-baths="3 Baths"
+                    data-area="2,800 sqft" data-parking="1 Courtyard Parking" data-year="Restored in 2023"
+                    data-description="This rare heritage residence in Bhaktapur preserves distinctive Newari craftsmanship, historic brick and wood detail, and restored architectural beauty while introducing modern comfort for present-day living. It is ideal for buyers seeking cultural value, design character, and a prestigious long-term property in a historic setting."
+                    data-highlights="UNESCO heritage neighborhood|Restored woodwork and brick detail|Ideal for boutique living"
+                    data-owner-phone="+977-9810011105" data-owner-name="Prakash Maharjan"
+                    data-image="images/properties5.avif">
+                    <img src="images/properties5.avif" alt="Heritage Property">
+                    <div class="card-details">
+                        <h3>Heritage Corner Property</h3>
+                        <p class="price">₨ 3,30,00,000</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Bhaktapur, Nepal</p>
+                        <p class="description">Magnificent historic property in UNESCO-listed Bhaktapur featuring
+                            restored Newari architecture, character-rich interiors, and modern upgrades that respect its
+                            cultural identity.</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,800 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button type="button" class="property-action details-btn">More Details</button>
+                            <button type="button" class="property-action order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Property 6 -->
+                <article class="property-card" data-title="Thamel Modern Apartment" data-price="₨ 46,20,000"
+                    data-location="Thamel, Kathmandu" data-type="City Apartment" data-status="Ready for Investment"
+                    data-availability="Immediate Inquiry" data-beds="2 Beds" data-baths="1 Bath" data-area="1,000 sqft"
+                    data-parking="Shared Parking" data-year="Built in 2021"
+                    data-description="This compact and efficient city apartment in Thamel sits in one of Kathmandu's most active districts, making it attractive for both personal use and rental investment. It suits buyers who prioritize central location, tourism-driven demand, daily convenience, and easy access to restaurants, shops, and nightlife."
+                    data-highlights="High rental demand area|Near restaurants and nightlife|Secure apartment entry"
+                    data-owner-phone="+977-9810011106" data-owner-name="Ritu Thapa"
+                    data-image="images/properties6.avif">
+                    <img src="images/properties6.avif" alt="Thamel Apartment">
+                    <div class="card-details">
+                        <h3>Thamel Modern Apartment</h3>
+                        <p class="price">₨ 46,20,000</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Thamel, Kathmandu</p>
+                        <p class="description">Compact modern apartment in Thamel with strong city access, high rental
+                            potential, and a practical layout near restaurants, shops, and entertainment venues.</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 1 Bath</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,000 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button type="button" class="property-action details-btn">More Details</button>
+                            <button type="button" class="property-action order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Property 7 -->
+                <article class="property-card" data-title="Contemporary Boudha Home" data-price="₨ 72,60,000"
+                    data-location="Boudha, Kathmandu" data-type="Contemporary Home" data-status="Popular Area"
+                    data-availability="Open for Visit" data-beds="2 Beds" data-baths="2 Baths" data-area="1,500 sqft"
+                    data-parking="1 Private Parking" data-year="Built in 2023"
+                    data-description="This contemporary residence near Boudhanath offers clean modern interiors, a practical footprint, and the benefit of living in one of Kathmandu's most culturally active neighborhoods. It is a strong choice for buyers who want a peaceful home base with walkable access to temples, cafes, local shops, and essential services."
+                    data-highlights="Near Boudhanath Stupa|Minimal modern interior|Strong resale potential"
+                    data-owner-phone="+977-9810011107" data-owner-name="Dipesh Tamang"
+                    data-image="images/properties7.avif">
+                    <img src="images/properties7.avif" alt="Contemporary Home">
+                    <div class="card-details">
+                        <h3>Contemporary Boudha Home</h3>
+                        <p class="price">₨ 72,60,000</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Boudha, Kathmandu</p>
+                        <p class="description">Contemporary designed home near Boudhanath Stupa with modern interiors,
+                            neighborhood charm, and convenient walking distance to temples, cafes, and local shops.</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,500 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button type="button" class="property-action details-btn">More Details</button>
+                            <button type="button" class="property-action order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Property 8 -->
+                <article class="property-card" data-title="Grand Estate Mansion" data-price="₨ 6,60,00,000"
+                    data-location="Narayanghat, Nepal" data-type="Estate Mansion" data-status="Luxury Signature"
+                    data-availability="Appointment Required" data-beds="8 Beds" data-baths="6 Baths"
+                    data-area="6,500 sqft" data-parking="6 Car Driveway" data-year="Built in 2019"
+                    data-description="This landmark estate in Narayanghat delivers scale, privacy, and prestige with expansive grounds, formal reception spaces, and a layout suited for luxury family living or executive hosting. It is aimed at buyers looking for a statement property with presence, flexibility, and long-term lifestyle value in a strategic central Nepal location."
+                    data-highlights="Grand entry and private compound|Large landscaped grounds|Ideal for luxury family living"
+                    data-owner-phone="+977-9810011108" data-owner-name="Sarita Poudel"
+                    data-image="images/properties8.avif">
+                    <img src="images/properties8.avif" alt="Grand Mansion">
+                    <div class="card-details">
+                        <h3>Grand Estate Mansion</h3>
+                        <p class="price">₨ 6,60,00,000</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Narayanghat, Nepal</p>
+                        <p class="description">Spectacular grand mansion with expansive grounds, formal living spaces,
+                            and a strategic location between Kathmandu and Pokhara for buyers seeking privacy and
+                            luxury.</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 8 Beds</span>
+                            <span><i class="fas fa-bath"></i> 6 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 6,500 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button type="button" class="property-action details-btn">More Details</button>
+                            <button type="button" class="property-action order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Property 9 -->
+                <article class="property-card" data-title="Urban Townhouse" data-price="₨ 92,40,000"
+                    data-location="Dharan, Nepal" data-type="Townhouse" data-status="Investment Pick"
+                    data-availability="Available Now" data-beds="4 Beds" data-baths="3 Baths" data-area="2,200 sqft"
+                    data-parking="2 Car Parking" data-year="Built in 2022"
+                    data-description="This well-positioned urban townhouse in Dharan offers practical multi-level living, flexible room use, and strong long-term value for both residential buyers and investors. Its location in a growing commercial city adds appeal for those seeking a home with everyday convenience, business access, and appreciation potential."
+                    data-highlights="Commercial growth corridor|Multi-level layout|Suitable for residence or investment"
+                    data-owner-phone="+977-9810011109" data-owner-name="Anil Rai" data-image="images/properties9.avif">
+                    <img src="images/properties9.avif" alt="Urban Townhouse">
+                    <div class="card-details">
+                        <h3>Urban Townhouse</h3>
+                        <p class="price">₨ 92,40,000</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Dharan, Nepal</p>
+                        <p class="description">Spacious townhouse in Dharan with flexible family space, good city
+                            connectivity, and strong investment appeal in a commercial area with continued economic
+                            growth.</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,200 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button type="button" class="property-action details-btn">More Details</button>
+                            <button type="button" class="property-action order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Property 10 -->
+                <article class="property-card" data-title="Minimalist Studio" data-price="₨ 39,60,000"
+                    data-location="Janakpur, Nepal" data-type="Studio" data-status="Affordable Choice"
+                    data-availability="Quick Booking" data-beds="1 Bed" data-baths="1 Bath" data-area="600 sqft"
+                    data-parking="Street Parking" data-year="Built in 2024"
+                    data-description="This compact studio in Janakpur is designed for efficient city living and offers an affordable entry point for first-time buyers, young professionals, or investors. Its low-maintenance layout, practical design, and location in a culturally important city make it a smart option for simple living or rental use."
+                    data-highlights="Low-maintenance layout|Budget-friendly entry point|Close to transport and markets"
+                    data-owner-phone="+977-9810011110" data-owner-name="Kabita Basnet"
+                    data-image="images/properties10.avif">
+                    <img src="images/properties10.avif" alt="Studio">
+                    <div class="card-details">
+                        <h3>Minimalist Studio</h3>
+                        <p class="price">₨ 39,60,000</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Janakpur, Nepal</p>
+                        <p class="description">Compact efficient studio in Janakpur with a low-maintenance layout,
+                            cultural surroundings, and an affordable price point suited to first-time buyers or rental
+                            investors.</p>
+                        <div class="features">
+                            <span><i class="fas fa-bed"></i> 1 Bed</span>
+                            <span><i class="fas fa-bath"></i> 1 Bath</span>
+                            <span><i class="fas fa-ruler-combined"></i> 600 sqft</span>
+                        </div>
+                        <div class="property-actions">
+                            <button type="button" class="property-action details-btn">More Details</button>
+                            <button type="button" class="property-action order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Nepal Ghar</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Nepal Ghar is a premier real estate company dedicated to helping you find the perfect home in
+                        Nepal. With years of experience in the Nepali property market, we specialize in premium
+                        properties across all major cities.</p>
+                    <p>Our team of professional agents is committed to providing personalized service and expert
+                        guidance throughout your property search journey. Whether you're looking for a modern villa, a
+                        downtown apartment, or a peaceful mountain retreat, we have the perfect property for you.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Properties Sold</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>1000+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>20+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/aboutimg.avif" alt="Luxury Home">
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <h3 style="text-align: center; margin: 60px 0 40px; font-size: 2rem; color: var(--primary);">Our Team</h3>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <img src="images/sambridha.jpg" alt="Sambridha Bhattarai">
+                    <h4>Sambridha Bhattarai</h4>
+                    <p class="role">CEO & Founder</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <img src="images/aayushregmi.png" alt="Aayush Regmi">
+                    <h4>Aayush Regmi</h4>
+                    <p class="role">Senior Agent</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-member">
+                    <img src="images/ayushach.jpg" alt="Aayush Acharya">
+                    <h4>Aayush Acharya</h4>
+                    <p class="role">Property Manager</p>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-member">
+                    <img src="images/yamangrg.jpg" alt="Yaman Gurung">
+                    <h4>Yaman Gurung</h4>
+                    <p class="role">Marketing Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Shitaladevi, Pokhara, Nepal</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+977 01-4567890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@nepalghar.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Pokhara School Map -->
+            <div class="map-section">
+                <h3 style="text-align: center; margin: 40px 0 20px; font-size: 1.8rem; color: var(--primary);">Our
+                    Location -
+                </h3>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps?q=Shitaladevi%20Community%20Secondary%20School%2C%20Pokhara%2C%20Nepal&z=17&output=embed"
+                        width="100%" height="450" style="border:0; border-radius: 10px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nepal<span>Ghar</span></h3>
+                    <p>Your trusted partner in finding premium properties across Nepal.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/aayushacharyanacl" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/aayushacharyanacl/?utm_source=ig_web_button_share_sheet"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@aayushacharyanacl" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Buy Property</a></li>
+
+                        <li><a href="#">Rent Property</a></li>
+                        <li><a href="#">Property Management</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nepal Ghar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="goTopBtn" class="go-top-btn" aria-label="Go to top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

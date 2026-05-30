@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details | Nepal Ghar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Nepal<span>Ghar</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#properties">Properties</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="property-page" id="propertyDetailsPage">
+        <section class="section">
+            <div class="container">
+                <div class="property-page-header">
+                    <a href="index.html#properties" class="back-link"><i class="fas fa-arrow-left"></i> Back to
+                        Properties</a>
+                    <h1 id="pagePropertyTitle">Property Details</h1>
+                    <p>Complete description, specifications, highlights, and booking form for your selected property.
+                    </p>
+                </div>
+
+                <div class="property-showcase">
+                    <div class="property-showcase-card property-showcase-info">
+                        <div class="showcase-topbar">
+                            <p class="showcase-label">Selected Property</p>
+                            <span class="showcase-status" id="showcaseStatus">Available</span>
+                        </div>
+                        <img id="showcaseImage" src="images/properties1.avif" alt="Selected property preview">
+                        <div class="showcase-content">
+                            <p class="showcase-location" id="showcaseLocation"><i class="fas fa-map-marker-alt"></i>
+                                Nepal</p>
+                            <h3 id="showcaseTitle">Property Details</h3>
+                            <p class="showcase-price" id="showcasePrice">Price on request</p>
+                            <p class="showcase-description" id="showcaseDescription">Detailed property information will
+                                appear here when you open a property from the homepage.</p>
+                            <div class="showcase-specs">
+                                <div>
+                                    <span>Type</span>
+                                    <strong id="showcaseType">Residential</strong>
+                                </div>
+                                <div>
+                                    <span>Availability</span>
+                                    <strong id="showcaseAvailability">Contact for availability</strong>
+                                </div>
+                                <div>
+                                    <span>Parking</span>
+                                    <strong id="showcaseParking">Contact for details</strong>
+                                </div>
+                                <div>
+                                    <span>Built</span>
+                                    <strong id="showcaseYear">Contact for details</strong>
+                                </div>
+                            </div>
+                            <div class="showcase-features" id="showcaseFeatures">
+                                <span><i class="fas fa-bed"></i> N/A</span>
+                                <span><i class="fas fa-bath"></i> N/A</span>
+                                <span><i class="fas fa-ruler-combined"></i> N/A</span>
+                            </div>
+                            <div class="showcase-owner-contact">
+                                <h4>Property Owner Contact</h4>
+                                <p><i class="fas fa-user"></i> <span id="ownerNameText">Sushil Adhikari</span></p>
+                                <p><i class="fas fa-phone"></i> <a id="ownerPhoneLink"
+                                        href="tel:+9779800000000">+977-9800000000</a></p>
+                            </div>
+                            <ul class="showcase-highlights" id="showcaseHighlights">
+                                <li>Contact us for full highlights.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="property-showcase-card property-showcase-form">
+                        <div class="showcase-topbar">
+                            <p class="showcase-label">Order / Inquiry</p>
+                            <span class="showcase-status accent">Priority Response</span>
+                        </div>
+                        <h3>Book this property</h3>
+                        <p class="showcase-form-copy">Send your details and our team will contact you with site visit
+                            and booking steps.</p>
+                        <form id="propertyOrderForm" class="property-order-form">
+                            <input type="hidden" id="selectedPropertyInput" name="selectedProperty"
+                                value="Property Details">
+                            <input type="text" name="name" placeholder="Your full name" required>
+                            <input type="tel" name="phone" placeholder="Phone number" required>
+                            <input type="email" name="email" placeholder="Email address" required>
+                            <input type="date" name="visitDate" required>
+                            <input type="text" name="budget" placeholder="Expected budget">
+                            <textarea name="message" rows="5"
+                                placeholder="Tell us your preferred visit time or booking request."></textarea>
+                            <button type="submit" class="btn">Send Request</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nepal<span>Ghar</span></h3>
+                    <p>Your trusted partner in finding premium properties across Nepal.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/aayushacharyanacl" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/aayushacharyanacl/?utm_source=ig_web_button_share_sheet"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@aayushacharyanacl" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#properties">Properties</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Buy Property</a></li>
+                        <li><a href="#">Sell Property</a></li>
+                        <li><a href="#">Rent Property</a></li>
+                        <li><a href="#">Property Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest property updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nepal Ghar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
