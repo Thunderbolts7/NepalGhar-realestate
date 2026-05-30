@@ -4,11 +4,18 @@ Nepal Ghar is a modern and responsive real estate website designed to help users
 Key Features:
 
 🏠 Browse premium properties across Nepal
+
 🔍 Search and filter by location, type, and price
+
 📄 Detailed property information pages
+
 📞 Property inquiry and booking forms
+
 👥 Team and company profile section
+
 📱 Fully responsive design for all devices
+
 ⚡ Smooth animations and interactive UI
+
 
 Perfect for showcasing real estate projects, property listings, and modern web development skills.
